@@ -49,78 +49,83 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div class="container">
+    <main class="bg-dark">
+        <div class="container text-white">
+            <img src="./img/Duck Army.jpg" class="img-fluid" alt="Papere Armate">
             <form class="row g-3 mt-3">
                 <h1 class="text-center">Nuovo Utente</h1>
                 <h4 class="text-center">Questo account è gestito da una Papera armata, i tuoi dati sono al sicuro!</h4>
                 <div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                        <label class="form-check-label" for="inlineRadio1">Uomo</label>
+                        <input class="form-check-input" type="radio" name="uomo" id="uomo" value="option1">
+                        <label class="form-check-label" for="uomo">Uomo</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2">Donna</label>
+                        <input class="form-check-input" type="radio" name="donna" id="donna" value="option2">
+                        <label class="form-check-label" for="donna">Donna</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                        <label class="form-check-label" for="inlineRadio3">Altro</label>
+                        <input class="form-check-input" type="radio" name="altro" id="altro" value="option3">
+                        <label class="form-check-label" for="altro">Altro</label>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <label for="nome" class="form-label">Nome</label>
+                    <label for="nome" class="form-label">Nome*</label>
                     <input type="nome" class="form-control" name="nome" id="nome" placeholder="Nome" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="cognome" class="form-label">Cognome</label>
+                    <label for="cognome" class="form-label">Cognome*</label>
                     <input type="cognome" class="form-control" id="cognome" placeholder="Cognome" required>
                 </div>
-                <div class="col-12">
-                    <label for="email" class="form-label">Email</label>
+                <div class="col-12 col-md-6">
+                    <label for="email" class="form-label">Email*</label>
                     <input type="email" class="form-control" id="email" placeholder="utente@esempio.com" required>
                 </div>
+                <div class="col-12 col-md-6">
+                    <label for="conferma-email" class="form-label">Conferma Email*</label>
+                    <input type="conferma-email" class="form-control" id="conferma-email" placeholder="utente@esempio.com" required>
+                </div>
                 <div class="col-md-6">
-                    <label for="password" class="form-label">Password</label>
+                    <label for="password" class="form-label">Password*</label>
                     <input type="password" class="form-control" id="password" placeholder="Password" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="conferma-password" class="form-label">Conferma Password</label>
-                    <input type="conferma-password" class="form-control" id="conferma-password" placeholder="Conferma Password" required>
+                    <label for="password" class="form-label">Conferma Password*</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password" required>
                 </div>
                 <div class="col-12">
-                    <label for="indirizzo1" class="form-label">Indirizzo</label>
+                    <label for="indirizzo1" class="form-label">Indirizzo*</label>
                     <input type="indirizzo1" class="form-control" id="indirizzo1" placeholder="Via Mario Rossi 12" required>
                 </div>
                 <div class="col-12">
                     <label for="indirizzo2" class="form-label">Indirizzo 2 (opzionale)</label>
                     <input type="indirizzo2" class="form-control" id="indirizzo2" placeholder="Appartamento, piano, casa a schiera">
                 </div>
-                <div class="col-md-6">
-                    <label for="città" class="form-label">Città</label>
+                <div class="col-md-5">
+                    <label for="città" class="form-label">Città*</label>
                     <input type="città" class="form-control" id="città" placeholder="" required>
                 </div>
                 <div class="col-md-4">
-                    <label for="stato" class="form-label">Stato</label>
-                    <select id="stato" class="form-select">
+                    <label for="stato" class="form-label">Stato*</label>
+                    <select id="stato" class="form-select" required>
                         <option selected>Scegli</option>
                         <option>...</option>
                     </select>
                 </div>
-                <div class="col-md-2">
-                    <label for="inputZip" class="form-label">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
+                <div class="col-md-3">
+                    <label for="inputZip" class="form-label">Zip*</label>
+                    <input type="text" class="form-control" id="inputZip" required>
                 </div>
                 <div class="col-12">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <input class="form-check-input" type="checkbox" id="gridCheck" required>
                         <label class="form-check-label" for="gridCheck">
-                            Richiesto per conferma trattamento dati
+                            Richiesta spunta per conferma trattamento dati
                         </label>
                     </div>
                 </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Iscriviti</button>
+                <div class="col-12 d-grid ">
+                    <button type="iscriviti" class="btn btn-warning">Iscriviti</button>
                 </div>
             </form>
         </div>
