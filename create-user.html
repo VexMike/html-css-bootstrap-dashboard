@@ -49,49 +49,82 @@
             </div>
         </nav>
     </header>
-
-    <form action="URL" method="get">
-        <h1>Nuovo Utente</h1>
-
-        <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">@</span>
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-                aria-describedby="basic-addon1">
+    <main>
+        <div class="container">
+            <form class="row g-3 mt-3">
+                <h1 class="text-center">Nuovo Utente</h1>
+                <h4 class="text-center">Questo account è gestito da una Papera armata, i tuoi dati sono al sicuro!</h4>
+                <div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Uomo</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Donna</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        <label class="form-check-label" for="inlineRadio3">Altro</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="nome" class="form-control" name="nome" id="nome" placeholder="Nome" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="cognome" class="form-label">Cognome</label>
+                    <input type="cognome" class="form-control" id="cognome" placeholder="Cognome" required>
+                </div>
+                <div class="col-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="utente@esempio.com" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="conferma-password" class="form-label">Conferma Password</label>
+                    <input type="conferma-password" class="form-control" id="conferma-password" placeholder="Conferma Password" required>
+                </div>
+                <div class="col-12">
+                    <label for="indirizzo1" class="form-label">Indirizzo</label>
+                    <input type="indirizzo1" class="form-control" id="indirizzo1" placeholder="Via Mario Rossi 12" required>
+                </div>
+                <div class="col-12">
+                    <label for="indirizzo2" class="form-label">Indirizzo 2 (opzionale)</label>
+                    <input type="indirizzo2" class="form-control" id="indirizzo2" placeholder="Appartamento, piano, casa a schiera">
+                </div>
+                <div class="col-md-6">
+                    <label for="città" class="form-label">Città</label>
+                    <input type="città" class="form-control" id="città" placeholder="" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="stato" class="form-label">Stato</label>
+                    <select id="stato" class="form-select">
+                        <option selected>Scegli</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Richiesto per conferma trattamento dati
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Iscriviti</button>
+                </div>
+            </form>
         </div>
-        
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
-                aria-describedby="basic-addon2">
-            <span class="input-group-text" id="basic-addon2">@example.com</span>
-        </div>
-        
-        <div class="mb-3">
-            <label for="basic-url" class="form-label">Your vanity URL</label>
-            <div class="input-group">
-                <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
-            </div>
-            <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
-        </div>
-        
-        <div class="input-group mb-3">
-            <span class="input-group-text">$</span>
-            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-            <span class="input-group-text">.00</span>
-        </div>
-        
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-            <span class="input-group-text">@</span>
-            <input type="text" class="form-control" placeholder="Server" aria-label="Server">
-        </div>
-        
-        <div class="input-group">
-            <span class="input-group-text">With textarea</span>
-            <textarea class="form-control" aria-label="With textarea"></textarea>
-        </div>
-    </form>
-
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
