@@ -15,7 +15,7 @@
         <nav class="navbar navbar-expand p-0">
             <div class="container-fluid bg-dark p-2">
                 <a class="navbar-brand text-white" href="#">
-                    <img src="./img/duck.png" width="60" alt="Papera bianca con sfondo arancione">
+                    <img src="../img/duck.png" width="60" alt="Papera bianca con sfondo arancione">
                 </a>
                 <div class="text-white">
                     Catalogo Libri
@@ -27,6 +27,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-warning" href="../index.html">
+                                Home</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link active text-white" style="--bs-text-opacity: .5;" href="#">Anagrafica
                                 Utenti</a>
@@ -51,21 +55,21 @@
     </header>
     <main class="bg-dark">
         <div class="container text-white">
-            <img src="./img/Duck Army.jpg" class="img-fluid" alt="Papere Armate">
+            <img src="../img/Duck Army.jpg" class="img-fluid" alt="Papere Armate">
             <form action="./index.html" method="post" class="row g-3 mt-3">
                 <h1 class="text-center">Nuovo Utente</h1>
                 <h4 class="text-center mb-4">Questo account è gestito da una Papera armata, i tuoi dati sono al sicuro!</h4>
-                <div>
+                <div class="mb-3">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="uomo" id="uomo" value="option1">
+                        <input class="form-check-input" type="radio" name="sesso" id="uomo" value="option1">
                         <label class="form-check-label" for="uomo">Uomo</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="donna" id="donna" value="option2">
+                        <input class="form-check-input" type="radio" name="sesso" id="donna" value="option2">
                         <label class="form-check-label" for="donna">Donna</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="altro" id="altro" value="option3">
+                        <input class="form-check-input" type="radio" name="sesso" id="altro" value="option3">
                         <label class="form-check-label" for="altro">Altro</label>
                     </div>
                 </div>
@@ -205,7 +209,7 @@
                         <option value="120" label="120" encoding="on">120</option>
                     </select>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mb-4">
                     <label for="datadinascita" class="form-label">Data di Nascita*</label>
                     <input type="datadinascita" class="form-control" name="datadinascita" id="datadinascita" placeholder="Data di Nascita" required>
                 </div>
@@ -221,15 +225,15 @@
                     <label for="password" class="form-label">Password*</label>
                     <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mb-4">
                     <label for="password" class="form-label">Conferma Password*</label>
                     <input type="password" class="form-control" name="confermapassword" id="password" placeholder="Password" required>
                 </div>
-                <div class="col-12">
+                <div class="col-6 col-12">
                     <label for="indirizzo1" class="form-label">Indirizzo*</label>
                     <input type="indirizzo1" class="form-control" name="indirizzo" id="indirizzo1" placeholder="Via Mario Rossi 12" required>
                 </div>
-                <div class="col-12">
+                <div class="col-6 col-12">
                     <label for="indirizzo2" class="form-label">Indirizzo 2 (opzionale)</label>
                     <input type="indirizzo2" class="form-control" name="indirizzo2" id="indirizzo2" placeholder="Appartamento, piano, casa a schiera">
                 </div>
@@ -370,16 +374,16 @@
                         <option value="Veneto">Veneto</option>
                     </select>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mb-4">
                     <label for="zip" class="form-label">Zip*</label>
                     <input type="text" class="form-control" name="zip" id="zip" required>
                 </div>
-                <div class="col-12">
+                <div class="col-12 mb-2">
                     <label for="altreinformazioni" class="form-label">Altre informazioni</label>
                     <textarea class="form-control" placeholder="Hobby, passioni, progetti futuri, ecc." name="altreinformazioni" id="altreinformazioni"
                         style="height: 150px"></textarea>
                 </div>
-                <div class="col-12">
+                <div class="col-12 mb-2">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" name="confermadati" id="confermadati" required>
                         <label class="form-check-label" for="confermadati">
