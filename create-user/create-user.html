@@ -12,7 +12,7 @@
 
 <body>
     <header class="page-header">
-        <nav class="navbar navbar-expand p-0">
+        <nav class="navbar navbar-expand-lg p-0" data-bs-theme="dark">
             <div class="container-fluid bg-dark p-2">
                 <a class="navbar-brand text-white" href="#">
                     <img src="../img/duck.png" width="60" alt="Papera bianca con sfondo arancione">
@@ -55,14 +55,14 @@
     </header>
     <main class="bg-dark">
         <div class="container text-white">
-            <img src="../img/Duck Army.jpg" class="img-fluid" alt="Papere Armate">
+            <img src="../img/Duck Army.jpg" class="img-fluid rounded-5" alt="Papere Armate">
             <form action="./index.html" method="post" class="row g-3 mt-3">
                 <h1 class="text-center">Nuovo Utente</h1>
                 <h4 class="text-center mb-4">Questo account è gestito da una Papera armata, i tuoi dati sono al sicuro!</h4>
                 <div class="mb-3">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="sesso" id="uomo" value="option1">
-                        <label class="form-check-label" for="uomo">Uomo</label>
+                        <input class="form-check-input" type="radio" name="sesso" id="uomo" value="option1" aria-labelledby="uomo-label">
+                        <label class="form-check-label" for="uomo" id="uomo-label">Uomo</label>
                     </div>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="sesso" id="donna" value="option2">
@@ -75,15 +75,15 @@
                 </div>
                 <div class="col-md-6">
                     <label for="nome" class="form-label">Nome*</label>
-                    <input type="nome" class="form-control" name="nome" id="nome" placeholder="Nome" required>
+                    <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome" required>
                 </div>
                 <div class="col-md-6">
                     <label for="cognome" class="form-label">Cognome*</label>
-                    <input type="cognome" class="form-control" name="cognome" id="cognome" placeholder="Cognome" required>
+                    <input type="text" class="form-control" name="cognome" id="cognome" placeholder="Cognome" required>
                 </div>
                 <div class="col-md-6">
                     <label for="età" class="form-label">Età*</label>
-                    <select class="form-select" aria-label="Default select example" required>
+                    <select class="form-select" aria-label="Default select example" placeholder="età" required>
                         <option class="select-option" label="Età" value="">
                             Età
                         </option>
@@ -211,7 +211,7 @@
                 </div>
                 <div class="col-md-6 mb-4">
                     <label for="datadinascita" class="form-label">Data di Nascita*</label>
-                    <input type="datadinascita" class="form-control" name="datadinascita" id="datadinascita" placeholder="Data di Nascita" required>
+                    <input type="number" class="form-control" name="datadinascita" id="datadinascita" placeholder="Data di Nascita" required>
                 </div>
                 <div class="col-12 col-md-6">
                     <label for="email" class="form-label">Email*</label>
@@ -219,7 +219,7 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <label for="conferma-email" class="form-label">Conferma Email*</label>
-                    <input type="conferma-email" class="form-control" name="confermaemail" id="conferma-email" placeholder="utente@esempio.com" required>
+                    <input type="email" class="form-control" name="confermaemail" id="conferma-email" placeholder="utente@esempio.com" required>
                 </div>
                 <div class="col-md-6">
                     <label for="password" class="form-label">Password*</label>
@@ -231,11 +231,11 @@
                 </div>
                 <div class="col-6 col-12">
                     <label for="indirizzo1" class="form-label">Indirizzo*</label>
-                    <input type="indirizzo1" class="form-control" name="indirizzo" id="indirizzo1" placeholder="Via Mario Rossi 12" required>
+                    <input type="text" class="form-control" name="indirizzo" id="indirizzo1" placeholder="Via Mario Rossi 12" required>
                 </div>
                 <div class="col-6 col-12">
                     <label for="indirizzo2" class="form-label">Indirizzo 2 (opzionale)</label>
-                    <input type="indirizzo2" class="form-control" name="indirizzo2" id="indirizzo2" placeholder="Appartamento, piano, casa a schiera">
+                    <input type="text" class="form-control" name="indirizzo2" id="indirizzo2" placeholder="Appartamento, piano, casa a schiera">
                 </div>
                 <div class="col-md-5">
                     <label for="città" class="form-label">Città*</label>
@@ -376,10 +376,10 @@
                 </div>
                 <div class="col-md-3 mb-4">
                     <label for="zip" class="form-label">Zip*</label>
-                    <input type="text" class="form-control" name="zip" id="zip" required>
+                    <input type="number" class="form-control" name="zip" id="zip" required>
                 </div>
                 <div class="col-12 mb-2">
-                    <label for="altreinformazioni" class="form-label">Altre informazioni</label>
+                    <label for="altreinformazioni" class="form-label">Altre informazioni (opzionale)</label>
                     <textarea class="form-control" placeholder="Hobby, passioni, progetti futuri, ecc." name="altreinformazioni" id="altreinformazioni"
                         style="height: 150px"></textarea>
                 </div>
@@ -391,8 +391,8 @@
                         </label>
                     </div>
                 </div>
-                <div class="col-12 d-grid ">
-                    <button type="iscriviti" class="btn btn-warning">Iscriviti</button>
+                <div class="col-12 d-grid mb-5">
+                    <button type="button" class="btn btn-warning">Iscriviti</button>
                 </div>
             </form>
         </div>
